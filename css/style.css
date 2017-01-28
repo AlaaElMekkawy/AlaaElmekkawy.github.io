@@ -1,0 +1,362 @@
+/*
+general
+***************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+body{
+    height:1200px;
+}
+
+
+
+/*
+start Navbar
+***************************************/
+
+
+.navbar{
+    margin:0;
+    border-radius:0;
+    clear: both;
+    height: 70px;
+}
+
+.navbar-inverse{
+    border: none;
+    
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding-top:30px
+
+}
+
+
+.navbar-inverse ul{
+        padding-top:15px
+
+}
+
+
+/*
+start coursol
+***************************************/
+
+.swiper-container {
+        width: 100%;
+        height: 450px;
+        margin-top: 50px;
+    }
+.swiper-slide {
+        background-position: center;
+        background-size: 100% 100%;
+        position: relative;
+    }
+
+.newitem{
+    color:#fff;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50% ,-50%);
+
+}
+/*
+srart newcollection
+***************************************/
+
+.newcollection{
+    padding-top:50px;
+    margin-bottom: 50px;
+    
+}
+.newcollection .container{
+    margin-top:40px;
+    margin-bottom: 50px;
+    box-shadow:0 0 15px 0px #ccc;
+
+    
+}
+
+.newcollection h2{
+   display:inline-block;
+    position: relative;
+    text-transform:uppercase;
+    
+}
+.newcollection h2:before,
+.ourstore h2:before,
+.contact h2:before {
+    content:'';
+    border:2px solid #000;
+    width:60px;
+    position:absolute;
+    left:-70px;
+    top:48%;
+    
+}
+
+.newcollection h2:after,
+.ourstore h2:after,
+.contact h2:after{
+    content:'';
+    border:2px solid #000;
+    width:60px;
+    position:absolute;
+    right:-70px;
+    top:48%;
+    
+}
+
+
+.newcollection .ncol{
+    padding:0;
+}
+
+.newcollection .item{
+    width:100%;
+    height: 300px;
+    display:flex;
+    margin:0;
+    
+}
+.newcollection .item:hover img{
+    opacity: .7;
+    transform: scale(1.1)
+    
+}
+
+.newcollection .item .imge{
+    width:50%;
+    height:100%;
+    background: #000;
+    overflow:hidden;
+
+    
+}
+.newcollection .item .imge img{
+    width:100%;
+    height: 100%;
+    transition:all ease-in-out 1s;
+    
+}
+
+.newcollection .item .info{
+    width:50%;
+    text-align:left;
+    padding:10px;
+    position:relative;
+}
+
+.newcollection .item .info span{
+    position: absolute;
+    bottom:20px;
+    border: 1px solid #777;
+    padding:5px
+}
+.newcollection .item .info i{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    font-size: 18px;
+    padding:5px
+
+    
+}
+
+
+/*
+our store
+***************************************/
+.ourstore{
+    padding-top:50px;
+    margin-bottom: 50px;
+    padding-right:10px;
+    padding-left:10px;
+    
+}
+
+.ourstore h2 {
+   display:inline-block;
+    position: relative;
+    text-transform:uppercase;
+    
+}
+
+.ourstore .stritem{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position:relative;
+    box-shadow:0 0 15px 0px #ccc;
+    margin-top: 40px
+
+}
+
+.ourstore .stritem:hover img{
+    opacity: .4;
+}
+
+.ourstore .stritem:hover .strinfo{
+        transform: translate(0,0);
+        opacity: 1;
+
+
+}
+.ourstore .stritem .imge{
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    height: 100%;
+    background: #000;
+}
+.ourstore .stritem .imge img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition:all ease-in-out 1s;
+
+}
+.ourstore .stritem .strinfo{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    background: rgba(255,255,255,.8);
+    color:#000;
+    bottom:0px;
+    text-align: left;
+    padding-left: 10px;
+    transform: translate(0,100%);
+    transition:all ease-in-out 1s;
+    opacity: 0;
+
+    
+    
+}
+.ourstore .stritem .strinfo span{
+    position: absolute;
+    bottom:30px;
+    right: 10px;
+    text-align: left;
+    padding:8px;
+    background: #f73276;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+
+.ourstore .stritem .strinfo i{
+    color:#000;
+    font-size:20px;
+    padding-left: 8px;
+    
+}
+.ourstore .stritem .strinfo a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/*
+new section
+***************************************/
+
+
+
+
+/*
+contact
+***************************************/
+
+.contact{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/7013248-butterfly-grass-stalk.jpg);
+    
+    background-position: center center;
+    color:#eee;
+    margin-top:40px;
+    background-attachment: fixed;
+    
+}
+.contact h2{
+   display:inline-block;
+    position: relative;
+    text-transform:uppercase;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom:50px;
+        
+    
+}
+.contact .form-control{
+    background:transparent ;
+}
+
+.contact .btn{
+    background:0;
+    color:#eee;
+    width:100%;
+    display: block;
+}
+.contactinfo{
+    padding-left:30px;
+
+}
+
+
+.contact h2:before {
+    
+    border:2px solid #eee;
+    
+}
+
+
+.contact h2:after{
+    border:2px solid #eee;
+
+}
+
+
+.social i{
+    font-size:20px;
+    padding: 7px;
+}
+
+.copyright{
+    height: 70px;
+    background: rgba(0,0,0,.5);
+    margin-top:40px;
+
+}
+.copyright p{
+    line-height: 70px;
+    
+}
+
+
+/*
+new section
+***************************************/
+
+@media (max-width: 991px) {
+    .newcollection .rev{
+     flex-direction:row-reverse;
+    }
+
+
+}
+
